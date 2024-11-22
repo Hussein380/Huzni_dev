@@ -1,369 +1,220 @@
 
-:root {
-    --bg-dark: #0a0a1a;
-    --card-bg: linear-gradient(145deg, #1a1a2e, #16213e);
-    --accent-blue: #4a90e2;
-    --neon-blue: #00f0ff;
-    --text-light: #e0e0e0;
-}
-
-* {
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins,sans-serif;
     text-decoration: none;
-}
-
-body {
+}   how can i improve my portofolio to look more modern and unique, what section is missing ? how can make better reach out to me if someone need a project? what simprovement should i make? be creative and give me suggestions 
+body{
     overflow-x: hidden;
-    background: var(--bg-dark);
 }
-
-.hero-header {
-    width: 100%;
+.hero-header{
+    width:100%;
     height: 100%;
     min-height: 100vh;
-    background: var(--bg-dark);
-    position: relative;
+    background: #222;
 }
-
-/* Add subtle grid background effect */
-.hero-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(var(--bg-dark) 1px, transparent 1px),
-                linear-gradient(90deg, var(--bg-dark) 1px, transparent 1px);
-    background-size: 30px 30px;
-    background-position: center center;
-    opacity: 0.1;
-    pointer-events: none;
-}
-
-.wrapper {
-    width: 1280px;
+.wrapper{
+    width:1280px;
     max-width: 95%;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-header {
+header{
     padding: 40px 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
 }
-
-.logo {
+.logo{
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-
-.logo img {
+.logo i{
     height: 45px;
-    width: 45px;
+    width:45px;
+    background-color: #007ced;
     border-radius: 50%;
-    box-shadow: 0 0 15px var(--neon-blue);
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
 }
-
-.logo .logo-text {
+.logo .logo-text{
     font-size: 24px;
     font-weight: 500;
-    color: var(--text-light);
-    margin-left: 10px;
-    text-shadow: 0 0 10px var(--neon-blue);
+    color:#fff;
 }
-
-nav {
-    position: relative; /* Add this */
-}
-
-nav .togglebtn {
-    position: absolute; /* Changed from relative to absolute */
+nav .togglebtn{
     width: 35px;
     height: 35px;
-    top: 0; /* Changed from 45px to 0 */
-    right: 0; /* Changed from 3% to 0 */
+    position: absolute;
+    top:45px;
+    right: 3%;
     z-index: 5;
     cursor: pointer;
     display: none;
-    padding: 5px;
-    background: rgba(10, 10, 26, 0.8);
-    border-radius: 5px;
-    border: 1px solid var(--neon-blue);
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
 }
-
-nav .togglebtn span {
+nav .togglebtn span{
     display: block;
-    background-color: var(--neon-blue);
+    background-color: #007ced;
     margin: 5px 0px;
-    width: 100%;
-    height: 3px;
+    width:100%;
+    height:3px;
     transition: 0.3s;
-    transition-property: transform, opacity;
-    box-shadow: 0 0 5px var(--neon-blue);
-}
+    transition-property:  transform, opacity;
 
-nav .navlinks {
+}
+nav .navlinks{
     list-style-type: none;
 }
-
-nav .navlinks li {
+nav .navlinks li{
     display: inline-block;
 }
-
-nav .navlinks li a {
-    color: var(--text-light);
-    margin-right: 2.5rem;
-    position: relative;
-    transition: color 0.3s;
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
 }
-
-nav .navlinks li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--neon-blue);
-    transition: width 0.3s;
-    box-shadow: 0 0 10px var(--neon-blue);
-}
-
-nav .navlinks li a:hover {
-    color: var(--neon-blue);
-}
-
-nav .navlinks li a:hover::after {
-    width: 100%;
-}
-
-
-
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 4rem;
-    position: relative;
-    z-index: 1;
+    padding-top:4rem;
 }
-
-.container .hero-pic {
+.container .hero-pic{
     width: 300px;
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--neon-blue);
-    box-shadow: 0 0 25px var(--neon-blue);
-    position: relative;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
 }
-
-.hero-pic img {
+.hero-pic img{
     height: 100%;
-    width: 100%;
+    width:100%;
     transition: 0.5s;
 }
-
-.hero-pic img:hover {
-    transform: scale(1.1);
+.hero-pic img:hover{
+    transform: scale(1.2);
 }
-
-.hero-text {
+.hero-text{
     max-width: 500px;
     display: flex;
     flex-direction: column;
 }
-
-.hero-text h5 {
-    color: var(--text-light);
+.hero-text h5{
+    color:#e5e5e5;
     font-size: 14px;
 }
-
-.hero-text h5 span {
-    color: var(--neon-blue);
+.hero-text h5 span{
+    color:#007ced;
     font-size: 16px;
-    text-shadow: 0 0 10px var(--neon-blue);
 }
-
-.hero-text h1 {
-    color: var(--text-light);
+.hero-text h1{
+    color: #007ced;
     font-size: 3rem;
-    margin: 15px 0;
-    text-shadow: 0 0 15px var(--accent-blue);
 }
+.hero-text p{
+    color:#e5e5e5;
 
-.hero-text p {
-    color: var(--text-light);
-    line-height: 1.5;
 }
-
-.btn-group {
-    margin: 45px 0;
+.btn-group{
+    margin:45px 0;
 }
-
-.btn-group .btn {
-    color: var(--text-light);
-    background: var(--card-bg);
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
     padding: 12px 25px;
-    margin: 5px 7px 5px 0;
+    margin: 5px 0px;
+    margin-right:7px;
     border-radius: 30px;
-    border: 2px solid var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
-    transition: all 0.3s ease;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
 }
-
-.btn-group .btn:hover {
-    background: var(--neon-blue);
-    color: var(--bg-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 0 25px var(--neon-blue);
+.btn.active{
+    border-color: #007ced;
 }
-
-.btn-group .btn.active {
-    background: var(--neon-blue);
-    color: var(--bg-dark);
-}
-
-.hero-text .social a {
-    color: var(--text-light);
+.hero-text .social i{
+    color: #e5e5e5;
     font-size: 18px;
-    margin-right: 15px;
-    transition: all 0.3s ease;
+    margin-right: 10px;
+    transition: 0.5s;
 }
-
-
-.hero-text .social a:hover i {
-    color: var(--neon-blue);
-    transform: translateY(-3px);
-    text-shadow: 0 0 15px var(--neon-blue);
+.hero-text .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
 }
-
-
-
-/* Update mobile menu styles */
-@media(max-width: 930px) {
-    nav {
-        position: relative;
-        z-index: 1000; /* Increase z-index */
+/* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
     }
-
-    nav .togglebtn {
-        display: block;
-        position: fixed; /* Change to fixed for better mobile positioning */
-        top: 40px; /* Adjust this value as needed */
-        right: 20px; /* Adjust this value as needed */
-    }
-
-   
-    /* Make the lines more visible */
-    nav .togglebtn span {
-        display: block;
-        background-color: var(--neon-blue);
-        margin: 6px 0; /* Increase margin for better spacing */
-        width: 100%;
-        height: 2px;
-        transition: 0.3s;
-        transition-property: transform, opacity;
-        box-shadow: 0 0 8px var(--neon-blue);
-    }
-    
+    /* for toggle button**/
     .click {
-        background: rgba(10, 10, 26, 0.95) !important;
-        top: 45px;
+        top:45px;
     }
-    
-    .click span {
-        transform: rotate(-45deg);
-        top: 0;
+    .click span{
         position: absolute;
-        margin-top: 12px;
+        margin-top:12px
     }
-    
-    .click span:first-child {
-        transform: rotate(-45deg);
-        margin: 0;
+    .click span:first-child{
+        transform: rotate(-40deg);
     }
-    
-    .click span:nth-child(2) {
+    .click span:nth-child(2)
+    {
         opacity: 0;
-        margin: 0;
+        margin:0;
     }
-    
-    .click span:last-child {
+    .click span:last-child{
         transform: rotate(45deg);
-        margin: 0;
+        top:0;
     }
-    
-    nav .navlinks {
-        position: fixed; /* Changed from absolute to fixed for better mobile experience */
-        top: 0;
-        right: -100%;
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
         bottom: 0;
-        width: 70%; /* Increased width for better usability */
+        width: 60%;
         height: 100vh;
-        background: var(--bg-dark);
+        background-color: #222;
         z-index: 3;
-        box-shadow: -5px 0 25px rgba(0, 240, 255, 0.2);
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
         transition: 0.5s;
-        padding: 80px 20px 25px;
-        backdrop-filter: blur(10px);
-        border-left: 1px solid var(--neon-blue);
+        padding: 25px 0px;
     }
-    
-    nav .navlinks li {
+    nav .navlinks li{
         display: block;
-        margin: 20px 0;
     }
-    
-    nav .navlinks li a {
+    nav .navlinks li a{
         display: block;
         margin-bottom: 15px;
         text-align: center;
-        font-size: 1.2rem;
-        color: var(--text-light);
     }
-    
-    nav .navlinks.open {
-        right: 0;
+    nav .navlinks.open{
+        right:0;
+    }
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
     }
 }
 
-@media(max-width: 768px) {
-    .container {
-        flex-direction: column;
-        padding-top: 2rem;
-    }
-    nav .togglebtn {
-        top: 30px; /* Adjust for smaller screens */
-        right: 15px;
-    
-    .hero-text {
-        padding: 40px 0px;
-        text-align: center;
-    }
-    
-    .btn-group {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .hero-text .social {
-        justify-content: center;
-        display: flex;
-    }
-}
+
 
 :root {
     --bg-dark: #0a0a1a;
@@ -822,14 +673,6 @@ body {
     padding: 2rem;
     position: relative;
     z-index: 2;
-}
-.project-img {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.project-img.loaded {
-    opacity: 1;
 }
 
 .project-content h3 {
